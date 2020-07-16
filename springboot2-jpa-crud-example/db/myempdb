@@ -1,0 +1,26 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Table structure for table `employeenew'
+--
+create table employeesnew
+(
+id  int  primary key not null,
+ first_name VARCHAR(20) NOT NULL,
+ last_name VARCHAR(20) NOT NULL,
+email_address VARCHAR(20) NOT NULL,
+ ann_pack  BIGINT(19) NOT NULL ,
+pan_no int
+);
+--
+-- Dumping data for table `employeesnew`
+--
+
+
+insert into employeesnew values(101,'Jay','Joshi','Jay@gmail.com',40000,1111);
+insert into employeesnew values(102,'Vijay','Vora','vijay@gmail.com',50000,1112);
+insert into employeesnew values(103,'Sanjay','Sakpal','Sanjay@gmail.com',60000,1112);
+insert into employeesnew values(104,'Ajay','Aapte','Ajay@gmail.com',70000,1114);
+
+
+-- --------------------------------------------------------
