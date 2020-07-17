@@ -23,9 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.meenal.entity.EmpTds;
 import com.meenal.entity.Employee;
-import com.meenal.repository.EmpTdsDaoRepository;
 import com.meenal.services.EmployeeServiceImpl;
 import com.meenal.userexception.ResourceNotFoundException;
 
@@ -60,7 +58,7 @@ public class EmployeeController {
 	
 	
 
-	@PostMapping("/employees")
+	/*@PostMapping("/employees")
 	public Employee createEmployee(@Valid @RequestBody Employee employee) {
 		return employeeService.addNewEmployee(employee);
 	}
@@ -72,7 +70,7 @@ public class EmployeeController {
 		System.out.println(count + "records updated ");
 		return count;
 	}
-
+*/
 
 
 	/*
@@ -92,13 +90,13 @@ public class EmployeeController {
 	 * ResponseEntity.ok(updatedEmployee); }
 	 */
 
-	@DeleteMapping("/employees/{id}") // public Map<String, Boolean> public
+	/*@DeleteMapping("/employees/{id}") // public Map<String, Boolean> public
 	public ResponseEntity<String> deleteEmployee(@PathVariable(value = "id") int employeeId)
 			throws ResourceNotFoundException {
 		Employee employee = employeeService.getEmpDetails(employeeId);
 		employeeService.deleteEmployeeById(employeeId);
 		return ResponseEntity.ok("deleted record of :" + employeeId);
-	}
+	}*/
 
 
 }

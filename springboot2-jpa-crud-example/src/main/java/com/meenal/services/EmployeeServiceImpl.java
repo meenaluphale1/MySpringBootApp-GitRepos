@@ -12,17 +12,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Component;
 
-import com.meenal.entity.EmpTds;
+//import com.meenal.entity.EmpTds;
 import com.meenal.entity.Employee;
-import com.meenal.repository.EmpTdsDaoRepository;
+//import com.meenal.repository.EmpTdsDaoRepository;
 import com.meenal.repository.EmployeeDaoRepository;
 
 @Component
 public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	private EmployeeDaoRepository dao;
-	@Autowired
-	private EmpTdsDaoRepository daoTds;
+//	@Autowired
+	//private EmpTdsDaoRepository daoTds;
 
 	@Override
 	public List<Integer> getEmployees() {
@@ -39,7 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		Optional<Employee> empWrap = dao.findById(id); // - hibernate method
 		return empWrap.get();
 	}
-
+/*
 	@Override
 	public Employee addNewEmployee(Employee emp) {
 		return dao.save(emp);
@@ -59,8 +59,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public void deleteAllEmployees() {
 		dao.deleteAll();
-	}
-
+	}*/
+/*
 	@Override
 	public int calcMonthlySal()		
 	{
@@ -91,6 +91,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 			}
 		return count;
 	}	
-	
+	*/
 	}
 	

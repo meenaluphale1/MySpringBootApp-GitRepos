@@ -11,17 +11,17 @@ public interface EmployeeService {
 	
 		public List<Integer> getEmployees();
 		
-		public  int calcMonthlySal();
+		//public  int calcMonthlySal();
 		
 		public Employee getEmpDetails(int id); 
 	    
-	    public Employee addNewEmployee(Employee emp) ;
+	 /*   public Employee addNewEmployee(Employee emp) ;
 	    
 	    public Employee updateEmployee(Employee emp) ;
 	    public String  deleteEmployeeById(int empid) ;
 	  
 	    //public void  deleteEmployeeById(int empid) ;
 	   
-	    public void deleteAllEmployees();
+	    public void deleteAllEmployees();*/
 
 }
